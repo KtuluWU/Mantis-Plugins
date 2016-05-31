@@ -5,5 +5,5 @@
 A plugin which creates a button for scrolling to the top of page.
 
 ###Screenshot
-![Screenshot no-active](https://github.com/KtuluWU/Mantis-Plugins/tree/master/ScrollToTop/screenshot-1.png)
-![Screenshot active](https://github.com/KtuluWU/Mantis-Plugins/tree/master/ScrollToTop/screenshot-2.png)
+![Screenshot no-active](https://github.com/KtuluWU/Mantis-Plugins/master/ScrollToTop/screenshot-1.png)
+![Screenshot active](https://github.com/KtuluWU/Mantis-Plugins/master/ScrollToTop/screenshot-2.png)
