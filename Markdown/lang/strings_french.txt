@@ -1,0 +1,80 @@
+<?php
+/* FWA Création de la traduction française */
+
+$s_plugin_Markdown_title                 = 'MantisBT Markdown';
+$s_plugin_Markdown_description           = 'Markdown plugin.';
+
+$s_plugin_Markdown_install_message       = 'CAUTION: Installation de ce plugin va cacher le MantisBT text formatting.';
+
+$s_plugin_Markdown_config                = 'Configuration';
+$s_plugin_Markdown_process_text          = 'Markdown Processing Text';
+$s_plugin_Markdown_process_rss           = 'Markdown Processing RSS';
+$s_plugin_Markdown_process_email         = 'Markdown Processing EMail';
+$s_plugin_Markdown_process_extended      = 'Utiliser <a href="https://github.com/kierate/php-markdown-extra-extended" title="more informations about Extended">Markdown Extended</a>, utiliser MD Extra';
+$s_plugin_Markdown_process_extra         = 'Utiliser <a href="http://michelf.com/projects/php-markdown/extra/" title="more informations about Extra">Markdown Extra</a>';
+$s_plugin_Markdown_process_view_php      = 'Utiliser Formatting seulement dans la page bug view et change status.';
+$s_plugin_Markdown_process_html_decode   = 'HTML entities back to characters';
+$s_plugin_Markdown_process_bbcode_filter = 'Filtre dans BBCode';
+$s_plugin_Markdown_enabled               = 'On';
+$s_plugin_Markdown_disabled              = 'Off';
+
+/* La page du manuel */
+$s_plugin_Markdown_nom_first_title		 = '<strong>Titre</strong>';
+$s_plugin_Markdown_nom_second_title 	 = '<strong>Sous-Titre</strong>';
+$s_plugin_Markdown_nom_list_no_order 	 = '<strong>Liste non ordonnée</strong>';
+$s_plugin_Markdown_nom_list_order 		 = '<strong>Liste ordonnée</strong>';
+$s_plugin_Markdown_nom_reference 		 = '<strong>Citation</strong>';
+$s_plugin_Markdown_nom_link		 		 = '<strong>Lien</strong>';
+$s_plugin_Markdown_nom_image 			 = "<strong>Image</strong>\r<i>(<strong>Attention!</strong>Ne pas recommander\rd'utiliser cette option à cause de\r la sécurité, aucune\r image peut être affichée\r dans les notes, veuillez utiliser\r des pièces jointes.)</i>";
+$s_plugin_Markdown_nom_bold 		 	 = '<strong>Bold</strong>';
+$s_plugin_Markdown_nom_italic 	 		 = '<strong>Italique</strong>';
+$s_plugin_Markdown_nom_code 		 	 = '<strong>Code</strong>';
+$s_plugin_Markdown_nom_HorizontalRule 	 = '<strong>Line de séparation</strong>';
+
+$s_plugin_Markdown_list_of_exemple		 = 'Markdown Manuel';
+$s_plugin_Markdown_list 				 = 'Voir le Manuel de Markdown';
+$s_plugin_Markdown_guide				 = 'Liste du manuel de Markdown';
+$s_plugin_Markdown_guide_more			 = 'Liste du manuel de Markdown (Retour au manuel)';
+$s_plugin_Markdown_option				 = 'Options Markdown';
+$s_plugin_Markdown_use					 = 'Utilisation';
+$s_plugin_Markdown_result				 = 'Résultat';
+
+$s_plugin_Markdown_first_title			 = "#Titre\ror\rTitre\r=====";
+$s_plugin_Markdown_second_title			 = "##Sous-Titre\ror\rSous-Titre\r-----------";
+$s_plugin_Markdown_list_no_order		 = "Soit : \r\r* un\r* deux\r* trois\r\rSoit:\r\r+ un\r+ deux\r+ trois\r\rSoit:\r\r- un\r- deux\r- trois";
+$s_plugin_Markdown_list_order 			 = "1. un\r2. deux\r3. trois";
+$s_plugin_Markdown_reference 			 = "> C'est une citation.";
+$s_plugin_Markdown_link 				 = "C'est un [lien](http://lien.com).";
+$s_plugin_Markdown_image 				 = '![icon](http://exemple.com/icon.png)';
+$s_plugin_Markdown_bold 				 = '**Bold**';
+$s_plugin_Markdown_italic 				 = "*Italique*\rOu:\r_Italique_";
+$s_plugin_Markdown_code   	 			 = '`using namespace std;`';
+$s_plugin_Markdown_HorizontalRule 		 = "###Titre\r***\rparagraphe";
+
+$s_plugin_Markdown_more 				 = 'Plus';
+$s_plugin_Markdown_button 				 = 'Back';
+
+/* La page de la liste non ordonnée plus */
+$s_plugin_Markdown_list_no_order_more 	 = "(Vous pouvez choisir* ou + ou -)\rAutre Utilisation:\r\r* un\r&nbsp&nbsp+ un\r&nbsp&nbsp+ deux\r&nbsp&nbsp&nbsp&nbsp&nbsp- un\r&nbsp&nbsp&nbsp&nbsp&nbsp- deux";
+$s_plugin_Markdown_list_no_order_more_re = "Autre Utilisation:\r\r* un\r  + un\r  + deux\r     - un\r     - deux";
+
+/* La page de la liste ordonnée plus */
+$s_plugin_Markdown_list_order_more 		 = " Si vous utilisez que 1. pour chaque ordre,\r Markdown va numéroter automatiquement:\r\r1. un\r1. deux\r1. trois\r1. quatre";
+$s_plugin_Markdown_list_order_more_re 	 = "1. un\r1. deux\r1. trois\r1. quatre"; 
+
+/* La page de la citation plus*/
+$s_plugin_Markdown_reference_more		 = "> C'est une citation\r>> C'est une citation\r>>> C'est une citation";
+
+/* La page de Titre plus */
+$s_plugin_Markdown_nom_title_more 		 = "<strong>Titre</strong>";
+$s_plugin_Markdown_title_more 			 = "#Titre\r##Sous-Titre\r###Titre de 3ème niveau\r####Titre de 4ème niveau\r...";
+
+/* La page de code plus */
+$s_plugin_Markdown_code_more			 = "<strong>Si vous avez besoin d'un ` dans le code:</strong>\r``Le code contient un `. ``";
+$s_plugin_Markdown_code_more_re 		 = "``Le code contient un `.``";
+$s_plugin_Markdown_code_more_more 		 = "<strong>Si vous voulez un bloc de:</strong>\r\r````php\rfunction print() { \recho \"Hello world\"\r}\r````";
+$s_plugin_Markdown_code_more_more_re 	 = "````php\rfunction print() { \recho \"Hello world\"\r}\r````";
+
+/* La page de HorizontalRule plus */
+$s_plugin_Markdown_HorizontalRule_more_one 		= "###Titre\r- - -\rparagraphe";
+$s_plugin_Markdown_HorizontalRule_more_two 		= "###Titre\r_ _ _\rparagraphe";

@@ -1,0 +1,24 @@
+<?php
+$s_plugin_Test_access = 'Access';
+$s_plugin_Test_menu_location = 'Menu Location';
+$s_plugin_Test_unite_image_width = 'Width Unit';
+$s_plugin_Test_unite_image_height = 'Height Unit';
+$s_plugin_Test_image_width = 'Width';
+$s_plugin_Test_image_height = 'Height';
+
+$s_plugin_Test_em = 'em';
+$s_plugin_Test_percent = '%';
+$s_plugin_Test_px = 'px';
+$s_plugin_Test_cm = 'cm';
+
+$s_plugin_Test_EVENT_MENU_MANAGE = 'Manage';
+$s_plugin_Test_EVENT_MENU_MAIN = 'Main';
+
+$s_plugin_Test_viewer = 'Viewer';
+$s_plugin_Test_reporter = 'Reporter';
+$s_plugin_Test_updater = 'Updater';
+$s_plugin_Test_developer = 'Developer';
+$s_plugin_Test_manager = 'Manager';
+$s_plugin_Test_administrator = 'Administrator';
+
+?>

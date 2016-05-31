@@ -1,0 +1,39 @@
+
+table#guide td, table#guide th
+  {
+  border:1px solid black;
+  /*text-align:left;*/
+  }
+
+table#guide 
+  {
+  width:50%;
+  margin: 0 auto;
+  }
+
+table#guide > tbody > tr {
+    background-color: #ffffff;
+}
+
+table#guide > tbody > tr:nth-child(even){
+    background-color: #EEE;
+}
+
+table#guide th {
+	text-align: center;
+}
+
+table.markdown-table td.markdown-align-right
+{
+  text-align: right;
+}
+
+table.markdown-table td.markdown-align-center
+{
+  text-align: center;
+}
+
+table.markdown-table td.markdown-align-left
+{
+  text-align: left;
+}
