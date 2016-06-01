@@ -30,6 +30,7 @@ $s_plugin_Markdown_nom_bold 		 	 = '<strong>Bold</strong>';
 $s_plugin_Markdown_nom_italic 	 		 = '<strong>Italique</strong>';
 $s_plugin_Markdown_nom_code 		 	 = '<strong>Code</strong>';
 $s_plugin_Markdown_nom_HorizontalRule 	 = '<strong>Line de séparation</strong>';
+$s_plugin_Markdown_nom_table 			 = '<strong>Tables</strong>';
 
 $s_plugin_Markdown_list_of_exemple		 = 'Markdown Manuel';
 $s_plugin_Markdown_list 				 = 'Voir le Manuel de Markdown';
@@ -46,10 +47,11 @@ $s_plugin_Markdown_list_order 			 = "1. un\r2. deux\r3. trois";
 $s_plugin_Markdown_reference 			 = "> C'est une citation.";
 $s_plugin_Markdown_link 				 = "C'est un [lien](http://lien.com).";
 $s_plugin_Markdown_image 				 = '![icon](http://exemple.com/icon.png)';
-$s_plugin_Markdown_bold 				 = '**Bold**';
+$s_plugin_Markdown_bold 				 = "**Bold**\rOu:\r__Bold__";
 $s_plugin_Markdown_italic 				 = "*Italique*\rOu:\r_Italique_";
 $s_plugin_Markdown_code   	 			 = '`using namespace std;`';
 $s_plugin_Markdown_HorizontalRule 		 = "###Titre\r***\rparagraphe";
+$s_plugin_Markdown_table 				 = "| Colonne1 | Colonne2 |\r| ------- | ------- |\r| data | data |";
 
 $s_plugin_Markdown_more 				 = 'Plus';
 $s_plugin_Markdown_button 				 = 'Back';
@@ -78,3 +80,8 @@ $s_plugin_Markdown_code_more_more_re 	 = "````php\rfunction print() { \recho \"H
 /* La page de HorizontalRule plus */
 $s_plugin_Markdown_HorizontalRule_more_one 		= "###Titre\r- - -\rparagraphe";
 $s_plugin_Markdown_HorizontalRule_more_two 		= "###Titre\r_ _ _\rparagraphe";
+
+/* La page de tables plus */
+$s_plugin_Markdown_table_more_one 		 = "Aligné à Gauche:\r| Colonne1 | Colonne2 |\r| :------- | :------- |\r| data | data |";
+$s_plugin_Markdown_table_more_two 		 = "Aligné à Droite: \r| Colonne1 | Colonne2 |\r| -------: | -------: |\r| data | data |";
+$s_plugin_Markdown_table_more_three		 = "Aligné au Milieu:\r| Colonne1 | Colonne2 |\r| :-------: | :-------: |\r| data | data |";

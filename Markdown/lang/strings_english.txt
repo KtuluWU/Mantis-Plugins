@@ -61,7 +61,7 @@ $s_plugin_Markdown_list_order 			 = "1. one\r2. two\r3. three";
 $s_plugin_Markdown_reference 			 = '> It\'s a quote.';
 $s_plugin_Markdown_link 				 = "It's a [link](http://link.com).";
 $s_plugin_Markdown_image 				 = '![icon](http://exemple.com/icon.png)';
-$s_plugin_Markdown_bold 				 = '**Bold**';
+$s_plugin_Markdown_bold 				 = "**Bold**\rOr:\r__Bold__";
 $s_plugin_Markdown_italic 				 = "*Italic*\rOr:\r_Italic_";
 $s_plugin_Markdown_code   	 			 = '`using namespace std;`';
 $s_plugin_Markdown_HorizontalRule		 = "###Title\r* * *\rparagraph";
@@ -97,6 +97,6 @@ $s_plugin_Markdown_HorizontalRule_more_one 		= "###Title\r- - -\rparagraph";
 $s_plugin_Markdown_HorizontalRule_more_two 		= "###Title\r_ _ _\rparagraph";
 
 /* The page of tables(More) */
-$s_plugin_Markdown_table_more_one 		 = "| Column1 | Column2 |\r| :------- | :------- |\r| data | data |";
-$s_plugin_Markdown_table_more_two 		 = "| Column1 | Column2 |\r| -------: | -------: |\r| data | data |";
-$s_plugin_Markdown_table_more_three		 = "| Column1 | Column2 |\r| :-------: | :-------: |\r| data | data |";
+$s_plugin_Markdown_table_more_one 		 = "Align left:\r| Column1 | Column2 |\r| :------- | :------- |\r| data | data |";
+$s_plugin_Markdown_table_more_two 		 = "Align Right: \r| Column1 | Column2 |\r| -------: | -------: |\r| data | data |";
+$s_plugin_Markdown_table_more_three		 = "Align Center:\r| Column1 | Column2 |\r| :-------: | :-------: |\r| data | data |";
