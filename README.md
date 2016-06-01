@@ -7,4 +7,4 @@ J'ai écrit et modifié des plugins pendant mon stage à FWA.
 * MonitorAutocomplete	(création)
 * SelectorAutocomplete	(création)
 * ScrollToTop			(création)
-* Markdown 				(Modification)
+* Markdown 				(Modification) @[Frank Bültge](https://github.com/bueltge/Markdown-for-MantisBT)
