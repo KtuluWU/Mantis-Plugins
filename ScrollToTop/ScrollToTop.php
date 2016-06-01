@@ -7,14 +7,14 @@ class ScrollToTopPlugin extends MantisPlugin {
         $this->name = "Scroll To Top";
         $this->description = 'Add a button to scroll to top';
 
-        $this->version = '1.0';
+        $this->version = '1.1';
         $this->requires = array(
-            'MantisCore' => '1.3.0',
+            'MantisCore' => '1.2.0, 1.3.0',
             );
 
-        $this->author = 'Yun';
-        $this->contact = 'yun.wu@fwa.eu';
-        $this->url = 'http://www.fwa.eu';
+        $this->author = 'Yun WU';
+        $this->contact = 'yun_wu@vip.126.com';
+        $this->url = 'https://github.com/KtuluWU/Mantis-Plugins';
     }    
 
     public function config() {

@@ -28,14 +28,14 @@ class MarkdownPlugin extends MantisFormattingPlugin {
 		$this->name        = plugin_lang_get( 'title' );
 		$this->description = plugin_lang_get( 'description' );
 		$this->page        = 'config';
-		$this->version     = '1.1.2';
+		$this->version     = '1.1.2-fwa';
 		$this->requires    = array(
 			'MantisCore'           => '1.2.0, 1.3.0',
 			'MantisCoreFormatting' => '1.0a',
 		);
-		$this->author  = 'Frank B&uuml;ltge';
-		$this->contact = 'frank@bueltge.de';
-		$this->url     = 'http://bueltge.de';
+		$this->author  = 'Frank Bültge, Yun WU';
+		$this->contact = 'frank@bueltge.de, yun_wu@vip.126.com';
+		$this->url     = 'http://bueltge.de, https://github.com/KtuluWU/Mantis-Plugins';
 	}
 	
 	/* FWA Modification */
