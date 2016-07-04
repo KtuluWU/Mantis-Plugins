@@ -48,15 +48,15 @@ $s_plugin_Markdown_nom_table 			 = '<strong>Tables</strong>';
 
 $s_plugin_Markdown_list_of_exemple		 = 'Markdown Guide';
 $s_plugin_Markdown_list 				 = 'Show the Markdown Guide';
-$s_plugin_Markdown_guide				 = 'List of Markdown Guide';
-$s_plugin_Markdown_guide_more			 = 'List of Markdown Guide (Back to Guide)';
+$s_plugin_Markdown_guide				 = 'Markdown Guide';
 $s_plugin_Markdown_option				 = 'Markdown options';
 $s_plugin_Markdown_use					 = 'Use';
 $s_plugin_Markdown_result				 = 'Result';
+$s_plugin_Markdown_desc 				 = 'Description';
 
 $s_plugin_Markdown_first_title			 = "#First Title\ror\rFirst Title\r=====";
 $s_plugin_Markdown_second_title			 = "##Second Title\ror\rSecond Title\r-----------";
-$s_plugin_Markdown_list_no_order		 = "Either : \r\r* one\r* two\r* three\r\rOr:\r\r+ one\r+ two\r+ three\r\rOr:\r\r- one\r- two\r- three";
+$s_plugin_Markdown_list_no_order		 = "* one\r* two\r* three";
 $s_plugin_Markdown_list_order 			 = "1. one\r2. two\r3. three";
 $s_plugin_Markdown_reference 			 = '> It\'s a quote.';
 $s_plugin_Markdown_link 				 = "It's a [link](http://link.com).";
@@ -64,39 +64,55 @@ $s_plugin_Markdown_image 				 = '![icon](http://exemple.com/icon.png)';
 $s_plugin_Markdown_bold 				 = "**Bold**\rOr:\r__Bold__";
 $s_plugin_Markdown_italic 				 = "*Italic*\rOr:\r_Italic_";
 $s_plugin_Markdown_code   	 			 = '`using namespace std;`';
-$s_plugin_Markdown_HorizontalRule		 = "###Title\r* * *\rparagraph";
+$s_plugin_Markdown_HorizontalRule		 = "Text\r* * *\rText";
 $s_plugin_Markdown_table 				 = "| Column1 | Column2 |\r| ------- | ------- |\r| data | data |";
 
 $s_plugin_Markdown_more 				 = 'More';
 $s_plugin_Markdown_button 				 = 'Back';
 
 /* The page of Bullet List(More) */
-$s_plugin_Markdown_list_no_order_more 	 = "(You can choose* or + or -)\rOther use:\r\r* one\r&nbsp&nbsp+ one\r&nbsp&nbsp+ two\r&nbsp&nbsp&nbsp&nbsp&nbsp- one\r&nbsp&nbsp&nbsp&nbsp&nbsp- two";
-$s_plugin_Markdown_list_no_order_more_re = "Other use:\r\r* one\r  + one\r  + two\r     - one\r     - two";
+$s_plugin_Markdown_list_no_order_nom	 	= "Bullet List Guide";
+$s_plugin_Markdown_list_no_order_desc_one 	= "You can choose<br/>\"*\" or \"+\" or \"-\".";
+$s_plugin_Markdown_list_no_order_desc_two	= "And other use"; 		
+$s_plugin_Markdown_list_no_order_more_one	= "Either:\r\r* one\r* two\r* three\r\ror:\r\r+ one\r+ two\r+ three\r\ror:\r\r- one\r- two\r- three";
+$s_plugin_Markdown_list_no_order_more 	 	= "* one\r&nbsp&nbsp+ one\r&nbsp&nbsp+ two\r&nbsp&nbsp&nbsp&nbsp&nbsp- one\r&nbsp&nbsp&nbsp&nbsp&nbsp- two";
+$s_plugin_Markdown_list_no_order_more_two 	= "* one\r  + one\r  + two\r     - one\r     - two";
 
 /* The page of Numbered List(More) */
-$s_plugin_Markdown_list_order_more 		 = "If you just use 1. for each number,\r Markdown will automatically number each item:\r1. one\r1. two\r1. three\r1. four";
-$s_plugin_Markdown_list_order_more_re 	 = "1. one\r1. two\r1. three\r1. four";
+$s_plugin_Markdown_list_order_nom 		 = "Numbered List Guide";
+$s_plugin_Markdown_list_order_desc 		 = "<center>If you just use <strong>1.</strong><br/>for each number,<br/>Markdown will <br/>automatically number <br/>each item</center>";
+$s_plugin_Markdown_list_order_more 		 = "1. one\r1. two\r1. three\r1. four";
 
 /* The page of Reference*/
+$s_plugin_Markdown_reference_nom 		 = "Reference Guide";
 $s_plugin_Markdown_reference_more		 = "> It's a quote\r>> It's a quote\r>>> It's a quote";
 
 /* The page of Title(More) */
+$s_plugin_Markdown_title_nom 			 = "Title Guide";
 $s_plugin_Markdown_nom_title_more 		 = "<strong>Title</strong>";
 $s_plugin_Markdown_title_more 			 = "#First Title\r##Second Title\r###Third Title\r####Fourth Title\r...";
 
 /* The page of code(More) */
-$s_plugin_Markdown_code_more			 = "<strong>If you need a ` in the code:</strong>\r``The code contains a `. ``";
-$s_plugin_Markdown_code_more_re 		 = "``The code contains a `.``";
-$s_plugin_Markdown_code_more_more 		 = "<strong>If you want a code block:</strong>\r\r````php\rfunction print() { \recho \"Hello world\"\r}\r````";
-$s_plugin_Markdown_code_more_more_re 	 = "````php\rfunction print() { \recho \"Hello world\"\r}\r````";
-
+$s_plugin_Markdown_code_nom 			 = "Code Guide";
+$s_plugin_Markdown_code_desc_one		 = "If you need a ` in the code:";
+$s_plugin_Markdown_code_desc_two 		 = "If you want a code block:";
+$s_plugin_Markdown_code_more_one		 = "``The code contains a `. ``";
+$s_plugin_Markdown_code_more_two 		 = "````php\rfunction print() { \r  echo \"Hello world\"\r}\r````";
 
 /* The page of HorizontalRule(More) */
-$s_plugin_Markdown_HorizontalRule_more_one 		= "###Title\r- - -\rparagraph";
-$s_plugin_Markdown_HorizontalRule_more_two 		= "###Title\r_ _ _\rparagraph";
+$s_plugin_Markdown_HorizontalRule_nom 			= "Horizontal Rule Guide";
+$s_plugin_Markdown_HorizontalRule_desc_one 		= "You can use \"- - -\"";
+$s_plugin_Markdown_HorizontalRule_desc_two 		= "You can use \"* * *\"";
+$s_plugin_Markdown_HorizontalRule_desc_three	= "And you can also use \"_ _ _\"";
+$s_plugin_Markdown_HorizontalRule_more_one 		= "Text\r- - -\rText";
+$s_plugin_Markdown_HorizontalRule_more_two 		= "Text\r* * *\rText";
+$s_plugin_Markdown_HorizontalRule_more_three	= "Text\r_ _ _\rText";
 
 /* The page of tables(More) */
-$s_plugin_Markdown_table_more_one 		 = "Align left:\r| Column1 | Column2 |\r| :------- | :------- |\r| data | data |";
-$s_plugin_Markdown_table_more_two 		 = "Align Right: \r| Column1 | Column2 |\r| -------: | -------: |\r| data | data |";
-$s_plugin_Markdown_table_more_three		 = "Align Center:\r| Column1 | Column2 |\r| :-------: | :-------: |\r| data | data |";
+$s_plugin_Markdown_table_nom 			 = "Tables Guide";
+$s_plugin_Markdown_table_desc_one 		 = "Align left";
+$s_plugin_Markdown_table_desc_two 		 = "Align Right";
+$s_plugin_Markdown_table_desc_three 	 = "Align Center";
+$s_plugin_Markdown_table_more_one 		 = "| Column1 | Column2 |\r| :------- | :------- |\r| data | data |";
+$s_plugin_Markdown_table_more_two 		 = "| Column1 | Column2 |\r| -------: | -------: |\r| data | data |";
+$s_plugin_Markdown_table_more_three		 = "| Column1 | Column2 |\r| :-------: | :-------: |\r| data | data |";

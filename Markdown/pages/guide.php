@@ -4,7 +4,7 @@ html_page_top1( plugin_lang_get( 'title' ) );
 echo '<link rel="stylesheet" type="text/css" href="' . plugin_file("style.css") . '"/>';
 html_page_top2( );
 
-$url_image = helper_mantis_url('/images/fwa_mantis_logo.gif');
+$url_image = helper_mantis_url('images/fwa_mantis_logo.gif');
 $image = "![fwa]($url_image)"; 
 
 ?>
@@ -55,7 +55,7 @@ $image = "![fwa]($url_image)";
 			</b></center>
 		</td>
 	</tr>
-
+<!-- 
 	<tr>
 		<td class="category"><?php echo plugin_lang_get('nom_reference') ?></td>
 		<td><?php echo nl2br( plugin_lang_get('reference') ) ?></td>
@@ -64,7 +64,7 @@ $image = "![fwa]($url_image)";
 			</b></center>
 		</td>
 	</tr>
-
+ -->
 	<tr>
 		<td class="category"><?php echo plugin_lang_get('nom_link') ?></td>
 		<td><?php echo nl2br( plugin_lang_get('link') ) ?></td>
@@ -111,14 +111,18 @@ $image = "![fwa]($url_image)";
 		<td class="category"><?php echo plugin_lang_get('nom_table') ?></td>
 		<td><?php echo nl2br( plugin_lang_get('table') ) ?></td>
 		<td><?php echo string_display_links(plugin_lang_get('table')) ?>
-			
 			<center><b><a href="<?php echo plugin_page('table_demo') ?>"><?php echo plugin_lang_get('more')?>
 			</a></b></center>	
 			 
 		</td>
 	</tr>
-	
-
+<!-- 	
+	<tr>
+		<th colspan=3 class="title">
+			<a href="<?php echo $_SERVER['HTTP_REFERER']; ?>"><?php echo plugin_lang_get('button') ?></a>
+		</th>
+	</tr>
+ -->
 </table>
 <?php
 html_page_bottom1( );

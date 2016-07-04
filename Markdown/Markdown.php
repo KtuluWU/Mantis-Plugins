@@ -28,14 +28,14 @@ class MarkdownPlugin extends MantisFormattingPlugin {
 		$this->name        = plugin_lang_get( 'title' );
 		$this->description = plugin_lang_get( 'description' );
 		$this->page        = 'config';
-		$this->version     = '1.1.2-fwa';
+		$this->version     = '1.1.3';
 		$this->requires    = array(
 			'MantisCore'           => '1.2.0, 1.3.0',
 			'MantisCoreFormatting' => '1.0a',
 		);
-		$this->author  = 'Frank Bültge, Yun WU';
-		$this->contact = 'frank@bueltge.de, yun_wu@vip.126.com';
-		$this->url     = 'http://bueltge.de, https://github.com/KtuluWU/Mantis-Plugins';
+		$this->author  = 'Frank Bültge';
+		$this->contact = 'frank@bueltge.de';
+		$this->url     = 'http://bueltge.de';
 	}
 	
 	/* FWA Modification */
@@ -43,14 +43,43 @@ class MarkdownPlugin extends MantisFormattingPlugin {
     {
         $hooks = parent::hooks();
 			
-			$hooks['EVENT_BUGNOTE_ADD_FORM'] = 'list_of_exemple';
+			$hooks['EVENT_LAYOUT_RESOURCES'] = 'resources';
+			$hooks['EVENT_LAYOUT_BODY_END']  = 'json';
+			//$hooks['EVENT_BUGNOTE_ADD_FORM'] = 'list_of_exemple';
+			//$hooks['EVENT_REPORT_BUG_FORM'] = 'list_of_exemple_bug_report';
 			return $hooks;	
     }
 
+    function resources() {
+    	echo '<script type="text/javascript" src="' . plugin_file("markdown.js") . '"></script>
+    	<link rel="stylesheet" type="text/css" href="' . plugin_file("style.css") . '"/>';
+    }
+
+    public function json() {
+    	$t_array['icon'] = plugin_file('guide.png');
+    	$t_array['text'] = plugin_lang_get('guide');
+    	$t_array['url'] = plugin_page('guide');
+    	$t_array['text_for_return'] = plugin_lang_get('button');
+
+        $t_html_proof_json = str_replace('"', '&quot;', json_encode( $t_array, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE ) );
+        
+             
+        echo  '<input type="hidden" name="markdown_guide" value="';
+        echo $t_html_proof_json;
+        echo '" />';
+
+    }
+/*
     function list_of_exemple() {
     	echo '<tr class="row-1"><th class="category" width="25%">'. plugin_lang_get("list_of_exemple") . '</th>' .
     		 '<td><a href="' . plugin_page('guide') . '">' . plugin_lang_get("guide") . '</a></td></tr>';    
     }
+
+    function list_of_exemple_bug_report() {
+    	echo '<div class="markdown-submit"><a href="' . plugin_page('guide') . '">' . plugin_lang_get("guide") . '</a>'.
+    		 '</div>';
+    }
+*/
     /* End of FWA Modification */
 
 	/**
@@ -190,7 +219,8 @@ class MarkdownPlugin extends MantisFormattingPlugin {
 		// array for all pages, there will be check
 		$pages = array(
 			'view.php', 
-			'bug_change_status_page.php'
+			'bug_change_status_page.php',
+			'plugin.php'
 		);
 		
 		// format url, get bt page

@@ -29,20 +29,20 @@ $s_plugin_Markdown_nom_image 			 = "<strong>Image</strong>\r<i>(<strong>Attentio
 $s_plugin_Markdown_nom_bold 		 	 = '<strong>Bold</strong>';
 $s_plugin_Markdown_nom_italic 	 		 = '<strong>Italique</strong>';
 $s_plugin_Markdown_nom_code 		 	 = '<strong>Code</strong>';
-$s_plugin_Markdown_nom_HorizontalRule 	 = '<strong>Line de séparation</strong>';
+$s_plugin_Markdown_nom_HorizontalRule 	 = '<strong>Ligne de séparation</strong>';
 $s_plugin_Markdown_nom_table 			 = '<strong>Tables</strong>';
 
 $s_plugin_Markdown_list_of_exemple		 = 'Markdown Manuel';
 $s_plugin_Markdown_list 				 = 'Voir le Manuel de Markdown';
-$s_plugin_Markdown_guide				 = 'Liste du manuel de Markdown';
-$s_plugin_Markdown_guide_more			 = 'Liste du manuel de Markdown (Retour au manuel)';
+$s_plugin_Markdown_guide				 = 'Manuel de Markdown';
 $s_plugin_Markdown_option				 = 'Options Markdown';
 $s_plugin_Markdown_use					 = 'Utilisation';
 $s_plugin_Markdown_result				 = 'Résultat';
+$s_plugin_Markdown_desc 				 = 'Description';
 
 $s_plugin_Markdown_first_title			 = "#Titre\ror\rTitre\r=====";
 $s_plugin_Markdown_second_title			 = "##Sous-Titre\ror\rSous-Titre\r-----------";
-$s_plugin_Markdown_list_no_order		 = "Soit : \r\r* un\r* deux\r* trois\r\rSoit:\r\r+ un\r+ deux\r+ trois\r\rSoit:\r\r- un\r- deux\r- trois";
+$s_plugin_Markdown_list_no_order		 = "* un\r* deux\r* trois";
 $s_plugin_Markdown_list_order 			 = "1. un\r2. deux\r3. trois";
 $s_plugin_Markdown_reference 			 = "> C'est une citation.";
 $s_plugin_Markdown_link 				 = "C'est un [lien](http://lien.com).";
@@ -50,38 +50,54 @@ $s_plugin_Markdown_image 				 = '![icon](http://exemple.com/icon.png)';
 $s_plugin_Markdown_bold 				 = "**Bold**\rOu:\r__Bold__";
 $s_plugin_Markdown_italic 				 = "*Italique*\rOu:\r_Italique_";
 $s_plugin_Markdown_code   	 			 = '`using namespace std;`';
-$s_plugin_Markdown_HorizontalRule 		 = "###Titre\r***\rparagraphe";
+$s_plugin_Markdown_HorizontalRule 		 = "Texte\r***\rTexte";
 $s_plugin_Markdown_table 				 = "| Colonne1 | Colonne2 |\r| ------- | ------- |\r| data | data |";
 
 $s_plugin_Markdown_more 				 = 'Plus';
-$s_plugin_Markdown_button 				 = 'Back';
+$s_plugin_Markdown_button 				 = 'Retour';
 
 /* La page de la liste non ordonnée plus */
-$s_plugin_Markdown_list_no_order_more 	 = "(Vous pouvez choisir* ou + ou -)\rAutre Utilisation:\r\r* un\r&nbsp&nbsp+ un\r&nbsp&nbsp+ deux\r&nbsp&nbsp&nbsp&nbsp&nbsp- un\r&nbsp&nbsp&nbsp&nbsp&nbsp- deux";
-$s_plugin_Markdown_list_no_order_more_re = "Autre Utilisation:\r\r* un\r  + un\r  + deux\r     - un\r     - deux";
+$s_plugin_Markdown_list_no_order_nom	 	= "Liste non ordonnée";
+$s_plugin_Markdown_list_no_order_desc_one 	= "Vous pouvez choisir<br/>\"*\" or \"+\" or \"-\".";
+$s_plugin_Markdown_list_no_order_desc_two	= "Et autre utilisation"; 		
+$s_plugin_Markdown_list_no_order_more_one	= "Soit:\r\r* un\r* deux\r* trois\r\rSoit:\r\r+ un\r+ deux\r+ trois\r\rSoit:\r\r- un\r- deux\r- trois";
+$s_plugin_Markdown_list_no_order_more 	 	= "* un\r&nbsp&nbsp+ un\r&nbsp&nbsp+ deux\r&nbsp&nbsp&nbsp&nbsp&nbsp- un\r&nbsp&nbsp&nbsp&nbsp&nbsp- deux";
+$s_plugin_Markdown_list_no_order_more_two 	= "* un\r  + un\r  + deux\r     - un\r     - deux";
 
 /* La page de la liste ordonnée plus */
-$s_plugin_Markdown_list_order_more 		 = " Si vous utilisez que 1. pour chaque ordre,\r Markdown va numéroter automatiquement:\r\r1. un\r1. deux\r1. trois\r1. quatre";
-$s_plugin_Markdown_list_order_more_re 	 = "1. un\r1. deux\r1. trois\r1. quatre"; 
+$s_plugin_Markdown_list_order_nom 		 = "Liste ordonnée";
+$s_plugin_Markdown_list_order_desc 		 = "<center>Si vous utilisez que<strong>1.</strong><br/>pour chaque ordre,<br/>Markdown va <br/>numéroter automatiquement</center>";
+$s_plugin_Markdown_list_order_more 		 = "1. un\r1. deux\r1. trois\r1. quatre";
 
 /* La page de la citation plus*/
 $s_plugin_Markdown_reference_more		 = "> C'est une citation\r>> C'est une citation\r>>> C'est une citation";
 
 /* La page de Titre plus */
+$s_plugin_Markdown_title_nom 			 = "Manuel Titre";
 $s_plugin_Markdown_nom_title_more 		 = "<strong>Titre</strong>";
 $s_plugin_Markdown_title_more 			 = "#Titre\r##Sous-Titre\r###Titre de 3ème niveau\r####Titre de 4ème niveau\r...";
 
 /* La page de code plus */
-$s_plugin_Markdown_code_more			 = "<strong>Si vous avez besoin d'un ` dans le code:</strong>\r``Le code contient un `. ``";
-$s_plugin_Markdown_code_more_re 		 = "``Le code contient un `.``";
-$s_plugin_Markdown_code_more_more 		 = "<strong>Si vous voulez un bloc de:</strong>\r\r````php\rfunction print() { \recho \"Hello world\"\r}\r````";
-$s_plugin_Markdown_code_more_more_re 	 = "````php\rfunction print() { \recho \"Hello world\"\r}\r````";
+$s_plugin_Markdown_code_nom 			 = "Manuel Code";
+$s_plugin_Markdown_code_desc_one		 = "Si vous avez besoin d'un ` dans le code";
+$s_plugin_Markdown_code_desc_two 		 = "Si vous avez besoin d'un bloc de code";
+$s_plugin_Markdown_code_more_one		 = "``Le code contient un `. ``";
+$s_plugin_Markdown_code_more_two 		 = "````php\rfunction print() { \r  echo \"Hello world\"\r}\r````";
 
 /* La page de HorizontalRule plus */
-$s_plugin_Markdown_HorizontalRule_more_one 		= "###Titre\r- - -\rparagraphe";
-$s_plugin_Markdown_HorizontalRule_more_two 		= "###Titre\r_ _ _\rparagraphe";
+$s_plugin_Markdown_HorizontalRule_nom 			= "Ligne de séparation";
+$s_plugin_Markdown_HorizontalRule_desc_one 		= "Vous pouvez utiliser \"- - -\"";
+$s_plugin_Markdown_HorizontalRule_desc_two 		= "Vous pouvez utiliser \"* * *\"";
+$s_plugin_Markdown_HorizontalRule_desc_three	= "Et vous pouvez aussi utiliser \"_ _ _\"";
+$s_plugin_Markdown_HorizontalRule_more_one 		= "Texte\r- - -\rTexte";
+$s_plugin_Markdown_HorizontalRule_more_two 		= "Texte\r* * *\rTexte";
+$s_plugin_Markdown_HorizontalRule_more_three	= "Texte\r_ _ _\rTexte";
 
 /* La page de tables plus */
-$s_plugin_Markdown_table_more_one 		 = "Aligné à Gauche:\r| Colonne1 | Colonne2 |\r| :------- | :------- |\r| data | data |";
-$s_plugin_Markdown_table_more_two 		 = "Aligné à Droite: \r| Colonne1 | Colonne2 |\r| -------: | -------: |\r| data | data |";
-$s_plugin_Markdown_table_more_three		 = "Aligné au Milieu:\r| Colonne1 | Colonne2 |\r| :-------: | :-------: |\r| data | data |";
+$s_plugin_Markdown_table_nom 			 = "Manuel Table";
+$s_plugin_Markdown_table_desc_one 		 = "Aligné à Gauche";
+$s_plugin_Markdown_table_desc_two 		 = "Aligné à Droite";
+$s_plugin_Markdown_table_desc_three 	 = "Aligné au Milieu";
+$s_plugin_Markdown_table_more_one 		 = "| Column1 | Column2 |\r| :------- | :------- |\r| data | data |";
+$s_plugin_Markdown_table_more_two 		 = "| Column1 | Column2 |\r| -------: | -------: |\r| data | data |";
+$s_plugin_Markdown_table_more_three		 = "| Column1 | Column2 |\r| :-------: | :-------: |\r| data | data |";
