@@ -37,3 +37,18 @@ table.markdown-table td.markdown-align-left
 {
   text-align: left;
 }
+
+a[name=markdownguide] {
+  font-size: small;
+  font-weight: normal;
+}
+
+div#view-issue-details table tbody tr td.bug-custom-field p
+{
+  margin:0;
+}
+
+div#view-issue-details table tbody tr td.bug-summary p
+{
+  margin:0;
+}

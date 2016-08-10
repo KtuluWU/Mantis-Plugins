@@ -8,14 +8,13 @@ class SelectorAutocompletePlugin extends MantisPlugin {
         $this->name = "SelectorAutocomplete";
         $this->description = "SelectorAutocomplete";
 
-        $this->version = '1.2';
+        $this->version = '1.1';
         $this->requires = array(
-            'MantisCore' => '1.2.0, 1.3.0',
+            'MantisCore' => '1.3.0',
             );
 
-        $this->author = 'Yun WU';
+        $this->author = 'Yun';
         $this->contact = 'yun_wu@vip.126.com';
-        $this->url = 'https://github.com/KtuluWU/Mantis-Plugins';
     }
 	
     public function config() {
@@ -44,7 +43,7 @@ class SelectorAutocompletePlugin extends MantisPlugin {
      
     }
 
-    public function selectorautocomplete_config()
+    public function selectorautocomplete_config($p_event, $p_user_id)
     {
         echo '<fieldset class="field-container"><legend><label for="selectorautocomplete_config">
             '. 'Selector Autocomplete' .'
@@ -69,12 +68,12 @@ class SelectorAutocompletePlugin extends MantisPlugin {
 <?php
     }
 
-    public function Save_selectorautocomplete_config()
+    public function Save_selectorautocomplete_config($p_event, $p_user_id)
     {
         $f_turn_on = gpc_get_int( 'turn_on', ON );
 
         if( plugin_config_get( 'turn_on' ) != $f_turn_on ) {
-            plugin_config_set( 'turn_on', $f_turn_on );
+            plugin_config_set( 'turn_on', $f_turn_on, $p_user_id );
         }
     }
 

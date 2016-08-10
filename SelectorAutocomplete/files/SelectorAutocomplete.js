@@ -191,7 +191,7 @@
 {
 	$(document).ready(function ()
 	{
-		$('select').not('select[name=project_id]').SelectorAutocomplete();
+		$('select').not('select[name=project_id]').not('select[multiple="multiple"]').SelectorAutocomplete();
 		$('.SelectToText').textClear();
 	});
 

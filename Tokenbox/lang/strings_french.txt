@@ -1,0 +1,8 @@
+<?php
+$s_plugin_FWATokenbox_name = "FWATokenbox";
+$s_plugin_FWATokenbox_title = "Utilisateur Surveillant";
+$s_plugin_FWATokenbox_error = "L'utilisateur non trouvé!";
+$s_plugin_FWATokenbox_hintText = "Veuillez saisir un nom";
+$s_plugin_FWATokenbox_noResultsText = "Non trouvé";
+$s_plugin_FWATokenbox_searchingText = "En cours de chercher...";
+?>

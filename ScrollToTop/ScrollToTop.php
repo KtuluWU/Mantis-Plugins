@@ -1,4 +1,4 @@
-<?php
+<?php 
  
 require_once( config_get( 'class_path' ) . 'MantisPlugin.class.php' );
 
@@ -7,14 +7,13 @@ class ScrollToTopPlugin extends MantisPlugin {
         $this->name = "Scroll To Top";
         $this->description = 'Add a button to scroll to top';
 
-        $this->version = '1.1';
+        $this->version = '1.0';
         $this->requires = array(
-            'MantisCore' => '1.2.0, 1.3.0',
+            'MantisCore' => '1.3.0',
             );
 
-        $this->author = 'Yun WU';
+        $this->author = 'Yun';
         $this->contact = 'yun_wu@vip.126.com';
-        $this->url = 'https://github.com/KtuluWU/Mantis-Plugins';
     }    
 
     public function config() {
@@ -47,7 +46,7 @@ class ScrollToTopPlugin extends MantisPlugin {
          echo '<a href="#0" class="cd-top">Top</a>', "\n";
     }
 
-    public function scrolltotop_config() {
+    public function scrolltotop_config($p_event, $p_user_id) {
         echo '<fieldset class="field-container"><legend><label for="scrolltotop_config">
             '. 'Scroll To Top' .'
             </label></legend>';
@@ -71,12 +70,12 @@ class ScrollToTopPlugin extends MantisPlugin {
 <?php
     }
 
-    public function Save_scrolltotop_config()
+    public function Save_scrolltotop_config($p_event, $p_user_id)
     {
         $f_turn_on = gpc_get_int( 'turn_on_scroll', ON );
 
         if( plugin_config_get( 'turn_on_scroll' ) != $f_turn_on ) {
-            plugin_config_set( 'turn_on_scroll', $f_turn_on );
+            plugin_config_set( 'turn_on_scroll', $f_turn_on, $p_user_id );
         }
     }
 

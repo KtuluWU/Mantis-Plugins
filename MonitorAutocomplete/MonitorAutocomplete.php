@@ -8,14 +8,13 @@ class MonitorAutocompletePlugin extends MantisPlugin {
         $this->name = "MonitorAutocomplete";
         $this->description = "MonitorAutocomplete";
 
-        $this->version = '1.2';
+        $this->version = '1.1';
         $this->requires = array(
-            'MantisCore' => '1.2.0, 1.3.0',
+            'MantisCore' => '1.3.0',
             );
 
-        $this->author = 'Yun WU';
+        $this->author = 'Yun';
         $this->contact = 'yun_wu@vip.126.com';
-        $this->url = 'https://github.com/KtuluWU/Mantis-Plugins';
     }
 	
     function hooks()
