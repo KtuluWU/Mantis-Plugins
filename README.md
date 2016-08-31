@@ -1,7 +1,9 @@
 #Mantis-Plugins
 ###Les plugins de MantisBT
 ***
-J'ai écrit et modifié des plugins pendant mon stage chez FWA. **(方方土)**
+####@方方土
+***
+J'ai écrit et modifié des plugins pendant mon stage chez FWA. 
 
 ###Plugins:
 * Mention				(création)
