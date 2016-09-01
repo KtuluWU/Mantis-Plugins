@@ -1,8 +1,7 @@
-#Mantis-Plugins
+﻿#Mantis-Plugins
 ###Les plugins de MantisBT
 ***
-####@方方土
-***
+
 J'ai écrit et modifié des plugins pendant mon stage chez FWA. 
 
 ###Plugins:
@@ -15,3 +14,5 @@ J'ai écrit et modifié des plugins pendant mon stage chez FWA.
 * ScrollToTop			(création)
 * Markdown 				(Modification) @[Frank Bültge](https://github.com/bueltge/Markdown-for-MantisBT)
 * BBCodePlus			(Modification)
+
+#####方方土
