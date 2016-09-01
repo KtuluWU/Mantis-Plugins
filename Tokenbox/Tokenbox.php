@@ -36,22 +36,21 @@ class TokenboxPlugin extends MantisPlugin {
 
 	public function resources()
 	{
-        if (plugin_config_get('turn_on_tokenbox') == ON) {
-            echo '<script type="text/javascript" src="' . plugin_file("Tokenbox.js") . '"></script>
-            <script type="text/javascript" src="' . plugin_file("jquery.tokeninput.js") . '"></script>
-            <link rel="stylesheet" type="text/css" href="' . plugin_file( "Tokenbox.css" ) . '"/>';
-        }
+        echo '<script type="text/javascript" src="' . plugin_file("Tokenbox.js") . '"></script>
+        <script type="text/javascript" src="' . plugin_file("jquery.tokeninput.js") . '"></script>
+        <link rel="stylesheet" type="text/css" href="' . plugin_file( "Tokenbox.css" ) . '"/>';
+        
     }
 
     public function print_tokenbox_for_create() 
     {
-        if (plugin_config_get('turn_on_tokenbox') == ON) {
-            echo '<div class="field-container"><label for="bug_tokenbox_username"><span>'. 
-                 plugin_lang_get( 'title' ) . '</span></label>' . 
-                 '<span class="input">'.
-                 '<input type="text" id="bug_tokenbox_username" name="userid" value="" />' .
-                 '</span></div>';
-        }
+        
+        echo '<div class="field-container"><label for="bug_tokenbox_username"><span>'. 
+             plugin_lang_get( 'title' ) . '</span></label>' . 
+             '<span class="input">'.
+             '<input type="text" id="bug_tokenbox_username" name="userid" value="" />' .
+             '</span></div>';
+        
     }
 
     public function tokenbox_add($p_event, $p_bug_data) {
