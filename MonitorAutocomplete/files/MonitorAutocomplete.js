@@ -1,11 +1,5 @@
 (function MonitorAutocompletePlugin($)
 {
-
-	function user_data()
-	{
-		return JSON.parse($("input[name=username_array]").val());
-	}
-
 	function highlight(value, search)
 	{
 		return value.replace(new RegExp('(' + search + ')', 'gi'), '<strong>$1</strong>');
@@ -38,7 +32,7 @@
 		return this.each(function ()
 		{
 			$textbox = $(this);
-			var users = user_data();
+			var users = window.UserName.split(',');
 			
 			var $auto = $textbox.autocomplete({
 				

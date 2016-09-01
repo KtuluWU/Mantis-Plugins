@@ -1,6 +1,7 @@
 #Tokenbox
 
 ###Les versions de Mantis compatibles: 1.2.0, 1.3.0
+###La version de JsonForUser: 1.0
 ***
 The plugin allows add multiple users monitoring when a new issue is reported, with the function tokenbox.
 

@@ -1,17 +1,18 @@
 <?php
 
-class MentionPlugin extends MantisFormattingPlugin {
+class AtyouPlugin extends MantisFormattingPlugin {
 	
     private $condition = null;
 
     function register() {
-        $this->name = "Mention";
-        $this->description = "Mention";
+        $this->name = "Atyou";
+        $this->description = "Atyou";
 
         $this->version = '1.0';
         $this->requires = array(
             'MantisCore' => '1.3.0',
             'MantisCoreFormatting' => '1.0a',
+            'JsonForUser' => '1.0',
             );
  
         $this->author = 'Yun';
@@ -23,20 +24,19 @@ class MentionPlugin extends MantisFormattingPlugin {
         return array(       
         );
     }
-	
+    
     function hooks()
     {
         $hooks = parent::hooks();
             
             $hooks['EVENT_LAYOUT_RESOURCES'] = 'resources';
-            $hooks['EVENT_LAYOUT_BODY_END'] = 'json_user_name';
             
             return $hooks;      
     }
 
-	public function resources()
-	{        
-        echo '<script type="text/javascript" src="' . plugin_file("mention.js") . '"></script>'.
+    public function resources()
+    {        
+        echo '<script type="text/javascript" src="' . plugin_file("atyou.js") . '"></script>'.
         '<link rel="stylesheet" type="text/css" href="' . plugin_file( "jquery.atwho.css" ) . '"/>'.
         '<script type="text/javascript" src="' . plugin_file("jquery.caret.js") . '"></script>'.
         '<script type="text/javascript" src="' . plugin_file("jquery.atwho.js") . '"></script>';
@@ -51,27 +51,5 @@ class MentionPlugin extends MantisFormattingPlugin {
         $p_string = mention_format_text( $p_string, /* html */ true );
             
         return $p_string;
-    }   
-
-    function json_user_name() {
-        $t_project_id = helper_get_current_project();
-        $t_access = ANYBODY;
-
-        $t_project_users_list = project_get_all_user_rows( $t_project_id, $t_access );
-
-        $t_user = array();
-        foreach ($t_project_users_list as $key => $Objet) {
-            $t_user[] =  $Objet["username"];
-        }
-        
-        $t_json = json_encode( $t_user, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE );
-        $t_html_proof_json = str_replace('"', '&quot;', $t_json );
-
-        echo  '<input type="hidden" name="mention_usr_information" value="';
-        echo $t_html_proof_json;
-        echo '" />';
-    }
-
-      
-    
+    }  
 }?>
