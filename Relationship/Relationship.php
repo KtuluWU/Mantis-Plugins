@@ -33,20 +33,18 @@ class RelationshipPlugin extends MantisPlugin {
 
 	public function resources()
 	{
-        if (plugin_config_get('turn_on_relationship') == ON) {
-            echo '<link rel="stylesheet" type="text/css" href="' . plugin_file( "relationship.css" ) . '"/>';
-        }
+        echo '<link rel="stylesheet" type="text/css" href="' . plugin_file( "relationship.css" ) . '"/>';
+        
     }
 
     function relationship() 
     {
-        if (plugin_config_get('turn_on_relationship') == ON) {
-            echo '<div class="field-container"><label><span>'. lang_get( 'this_bug' ) .'</span>'. '</label>'. 
-                 '<span class="input">';
-                 relationship_list_box( config_get( 'default_bug_relationship' ) ) ;
-            echo '<input type="text" name="dest_bug_id" value=""/>'.
-                 '</span></div>';
-        }
+        echo '<div class="field-container"><label><span>'. lang_get( 'this_bug' ) .'</span>'. '</label>'. 
+             '<span class="input">';
+             relationship_list_box( config_get( 'default_bug_relationship' ) ) ;
+        echo '<input type="text" name="dest_bug_id" value=""/>'.
+             '</span></div>';
+        
     }
 
     function relationship_add($p_event, $p_bug_data) {
