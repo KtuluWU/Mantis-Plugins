@@ -1,8 +1,8 @@
 <?php
-$s_plugin_FWATokenbox_name = "FWATokenbox";
-$s_plugin_FWATokenbox_title = "User monitoring";
-$s_plugin_FWATokenbox_error = "The user is not found!";
-$s_plugin_FWATokenbox_hintText = "Type in a name";
-$s_plugin_FWATokenbox_noResultsText = "Not found";
-$s_plugin_FWATokenbox_searchingText = "Searching...";
+$s_plugin_Tokenbox_name = "FWATokenbox";
+$s_plugin_Tokenbox_title = "User monitoring";
+$s_plugin_Tokenbox_error = "The user is not found!";
+$s_plugin_Tokenbox_hintText = "Type in a name";
+$s_plugin_Tokenbox_noResultsText = "Not found";
+$s_plugin_Tokenbox_searchingText = "Searching...";
 ?>

@@ -1,8 +1,8 @@
-<?php
-$s_plugin_FWATokenbox_name = "FWATokenbox";
-$s_plugin_FWATokenbox_title = "Utilisateur Surveillant";
-$s_plugin_FWATokenbox_error = "L'utilisateur non trouvé!";
-$s_plugin_FWATokenbox_hintText = "Veuillez saisir un nom";
-$s_plugin_FWATokenbox_noResultsText = "Non trouvé";
-$s_plugin_FWATokenbox_searchingText = "En cours de chercher...";
+﻿<?php
+$s_plugin_Tokenbox_name = "FWATokenbox";
+$s_plugin_Tokenbox_title = "Utilisateur Surveillant";
+$s_plugin_Tokenbox_error = "L'utilisateur non trouvé!";
+$s_plugin_Tokenbox_hintText = "Veuillez saisir un nom";
+$s_plugin_Tokenbox_noResultsText = "Non trouvé";
+$s_plugin_Tokenbox_searchingText = "En cours de chercher...";
 ?>

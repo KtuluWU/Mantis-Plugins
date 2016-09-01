@@ -1,4 +1,4 @@
 <?php
-$s_plugin_FWARecentProject_name = "Recent Project";
-$s_plugin_FWARecentProject_img_title = "Recent Project";
+$s_plugin_RecentProject_name = "Recent Project";
+$s_plugin_RecentProject_img_title = "Recent Project";
 ?>
