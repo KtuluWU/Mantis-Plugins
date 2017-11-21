@@ -1,10 +1,10 @@
-﻿#Mantis-Plugins
-###Les plugins de MantisBT
-***
-
-J'ai écrit et modifié des plugins pendant mon stage chez FWA. 
-
-###Plugins:
+# Mantis-Plugins  
+### Les plugins de MantisBT  
+* * *
+ 
+J'ai écrit et modifié des plugins pendant mon stage chez FWA.  
+ 
+### Plugins:  
 * JsonForUser			(création)
 * Atyou					(création) (utiliser avec JsonForUser)
 * Tokenbox				(création) (utiliser avec JsonForUser)
@@ -15,5 +15,5 @@ J'ai écrit et modifié des plugins pendant mon stage chez FWA.
 * ScrollToTop			(création)
 * Markdown 				(Modification) @[Frank Bültge](https://github.com/bueltge/Markdown-for-MantisBT)
 * BBCodePlus			(Modification)
-
-#####方方土
+ 
+##### 方方土
